@@ -1,0 +1,68 @@
+.todoListMain .formContainer input, textarea {
+  padding: 10px;
+  margin: 10px 0px 15px 0px;
+  font-size: 16px;
+  border: 2px solid #FFF;
+  width: 165px;
+  display: block;
+}
+
+.todoListMain .formContainer button, .todosContainer button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px 0px 10px 0px;
+  background-color: #0066FF;
+  color: #FFF;
+  border: 2px solid #0066FF;
+}
+
+.todosContainer button {
+  margin: 5px;
+}
+
+.todoListMain .formContainer button:hover, .todosContainer button:hover {
+  background-color: #003399;
+  border: 2px solid #003399;
+  cursor: pointer;
+}
+
+label {
+  margin: 20px 0px 20px 0px;
+  padding: 20px 0px 20px 0px;
+  color: #003399;
+}
+
+.todoListMain .theList {
+  padding-left: 0;
+  width: 250px;
+}
+
+.todoListMain .theList .listItem {
+  color: #333;
+  background-color: rgba(255, 255, 255, .5);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  list-style: none;
+}
+
+.theList {
+  padding: 0;
+}
+
+.todoListMain .theList .listItem {
+  color: #333;
+  background-color: rgba(255, 255, 255, .5);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  transition: background-color .2s ease-out;
+}
+
+.todoBody {
+  font-style: italic;
+}
+
+.error {
+  color: #b80000;
+}
