@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import TodoItems from "./TodoItems";
 import "./TodoList.css";
+import FlipMove from "react-flip-move";
 
 
 class TodoList extends Component {
@@ -40,7 +41,7 @@ class TodoList extends Component {
       .then((apiResponse) => {
         const myListOfTodos = apiResponse.data.map((todo) => {
           return { ...todo, isEditing: false }
-        })
+        }).reverse()
 
         this.setState({ listOfTodos: myListOfTodos })
         //console.log("ListofTodos: ", apiResponse.data)
@@ -83,7 +84,7 @@ class TodoList extends Component {
       <div className="todoListMain">
         <div className="formContainer">
           <h1>Todo List</h1>
-          <form onSubmit={this.addTodo}>
+          <form onSubmit={this.addTodo} method="POST">
 
             <label>Title:</label>
             <input type="text"
@@ -103,9 +104,12 @@ class TodoList extends Component {
           </form>
           <span className="error">{this.state.errorMessage}<br /></span>
         </div>
-        <div className="todosContainer">
-          <TodoItems listOfTodos={this.state.listOfTodos} deleteTodo={this.deleteTodo} updateTodo={this.updateTodo} />
-        </div>
+        <FlipMove duration={250} easing="ease-out">
+          <div className="todosContainer">
+            <TodoItems listOfTodos={this.state.listOfTodos} deleteTodo={this.deleteTodo} updateTodo={this.updateTodo} />
+          </div>
+        </FlipMove>
+
       </div>
     );
   }
