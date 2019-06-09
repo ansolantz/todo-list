@@ -99,7 +99,7 @@ class TodoList extends Component {
               onChange={(e) => this.handleChange(e)} />
 
 
-            <button type="submit">Add todo task</button>
+            <button type="submit">Add task</button>
 
           </form>
           <span className="error">{this.state.errorMessage}<br /></span>

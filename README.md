@@ -1,6 +1,9 @@
 ## Todo List
 
-This is a simple todo list built in React where you can edit and remove your todo tasks.
+This is a simple todo list built in React where you can add, edit and remove your todo tasks.
+
+![](./public/images/todo-1.jpg) ![](./public/images/todo-2.jpg)
+
 
 ### Example User stories
 
@@ -14,10 +17,9 @@ This is a simple todo list built in React where you can edit and remove your tod
 - **Done** As a user I want to mark my todo as done.
 - **Move todos** As a user I want to rearrange my todos.
 
-### Server
+### Backend
 
-[The server](https://github.com/ansolantz/challenge-todo-api) 
-
+Express and Mongo backend [here](https://github.com/ansolantz/challenge-todo-api) 
 
 
 ### 
