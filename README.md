@@ -1,6 +1,6 @@
 ## Todo List
 
-This is a simple todo list built in React where you can add, edit and remove your todo tasks.
+This is a simple todo list built in React where you can add, edit and remove your todo tasks. The backend is powered by Firebase.
 
 ![](./public/images/todo-1.jpg) ![](./public/images/todo-2.jpg)
 
@@ -19,7 +19,7 @@ This is a simple todo list built in React where you can add, edit and remove you
 
 ### Backend
 
-Express and Mongo backend [here](https://github.com/ansolantz/challenge-todo-api) 
+Backend services powered by [Firebase](https://console.firebase.google.com/) 
 
 
 ### 
